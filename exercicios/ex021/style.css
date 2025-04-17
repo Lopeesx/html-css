@@ -1,0 +1,25 @@
+@charset "UTF-8";
+body{
+    background-color: #CCFCCB;
+}
+h1{
+    background-color: lightgreen;
+    height: 40px; 
+    width: 385px;   
+
+    border: 10px inset #618b60;
+
+    padding: 10px;
+
+    margin: 30px auto 30px auto;
+    
+    outline-width: 10px;
+    outline-color: #456345;
+    outline-style: inset;
+}
+a{
+    color: rgb(132, 180, 83);
+}
+a:visited{
+    color: rgb(99, 190, 7);
+}
