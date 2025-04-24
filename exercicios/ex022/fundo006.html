@@ -3,30 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Imagem de Fundo</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+           /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+            /* Shorthand BACKGROUND 
+            color > image > position > repeat > [size] > attachment*/
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 600px;
             padding: 10px;
             border: 1px solid blue;
             border-radius: 10px;
             margin: auto;
+        }
+        p{
+            text-align: justify;
+            text-indent: 20px;
         }
     </style>
 </head>
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sequi pariatur voluptatibus delectus est quas, quia aspernatur voluptates eveniet nulla, distinctio repellat enim dolorem, numquam iure ratione optio. Temporibus, eligendi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sint repellendus placeat, quam aspernatur nobis quo? Similique alias, praesentium ab autem eos quibusdam doloremque, non, reprehenderit adipisci provident rerum voluptatibus!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque in quae doloremque, doloribus natus neque, sequi dolorum nisi error corrupti, veniam atque voluptatum iusto rerum distinctio architecto repellat laboriosam labore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et dicta odio mollitia aspernatur, ipsa ratione officia sit, labore nihil quisquam minima? Natus blanditiis adipisci reprehenderit pariatur! Molestiae, a consectetur! Libero.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam adipisci dolorum numquam esse omnis consequatur sit error sequi tenetur architecto ad facere dolore, tempora, unde alias et perspiciatis in quo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero laborum maxime suscipit quis assumenda quo saepe accusantium fugit facere nulla eum sed repellendus, id laboriosam officiis sunt ipsum vero nemo!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cum aliquam dignissimos minima. Dolore sunt vitae harum minima quam quas, nam optio aliquid molestiae officia distinctio, corrupti, vel fuga autem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, quas quae deleniti eius minima deserunt animi quia magnam dolorem voluptatem accusamus quasi ex adipisci, error iusto rem? Aperiam, consectetur praesentium?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, saepe et aut nulla veritatis sunt dolores omnis tenetur accusantium magnam officiis! Numquam illo voluptate adipisci exercitationem officiis vitae atque ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ab necessitatibus quidem dolorum consequatur mollitia perspiciatis unde sint aut temporibus numquam impedit quis quia doloribus odit, fugiat soluta molestiae repellat!</p>
+    
     </main>
     
 </body>
