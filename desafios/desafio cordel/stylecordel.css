@@ -1,12 +1,30 @@
 @charset "UTF-8";
-@font-face {
-    font-family: 'Barriecito';
-    src: url(fontes/Barriecito-Regular.ttf);
-@font-face {
-    font-family: '';
-    src: url(fontes/s);
-}
-}
+
+.passion-one-regular {
+    font-family: "Passion One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .passion-one-bold {
+    font-family: "Passion One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .passion-one-black {
+    font-family: "Passion One", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .sriracha-regular {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 header{
     background-color: black;
     height: 200px;
@@ -18,9 +36,8 @@ header h1{
     text-align: center;
     top: 50%;
     transform: translate(0% , 100%);
-    font-family: "Barriecito", system-ui;
+    font-family: "Passion One";
     font-weight: 800;
-    font-style: bold;
     font-size: 3em;
     margin-top: 0;
 }
@@ -29,7 +46,7 @@ header h2{
     text-align: center;
     transform: translate(0%, 100%);
 }
-a{
+a{  font-family: 'Sriracha' ;
     color: white;
     text-decoration: none;
 }
@@ -38,4 +55,28 @@ a:hover{
 }
 article{
     margin-top: 10px;
+}
+p{
+    padding-left: 20px;
+    padding-top: 30px;
+    line-height: 1.8;
+    font-family: 'Sriracha';
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+}
+#img-um >p{
+    background-color: rgba(0, 0, 0, 0.185);
+    width: 300px;
+    padding-right: 10px;
+}
+#img-um{
+    
+    color: white;
+    background-image: url(imagens/background001.jpg);
+    background-position: center right;
+    min-height: 700px;
+}
+#img-dois{
+    background-image: url(imagens/background002.jpg);
 }
