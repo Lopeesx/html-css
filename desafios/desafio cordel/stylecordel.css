@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
 }
-htmo, body{
+html, body{
     min-height: 100%;
     background-color: darkgray;
 }
@@ -32,7 +32,7 @@ htmo, body{
   }
 header{
     background-color: black;
-    height: 200px;
+    max-height: 80vh;
     margin-inline: -10px;
     margin-top: -21px;
 }
@@ -42,7 +42,7 @@ header h1{
     padding-top: 50px;
     font-family: "Passion One";
     font-weight: 800;
-    font-size: 3em;
+    font-size: 10vw;
     font-variant: small-caps;
     margin-top: 0;
 }
@@ -53,68 +53,60 @@ header h2{
     
 }
 a{
-    font-family:  ;
+    font-family: Arial, Helvetica, sans-serif ;
     color: white;
     text-decoration: none;
 }
 a:hover{
     text-decoration: underline;
 }
-article{
-    margin:-10px ;
-}
-p{
-    padding-left: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    line-height: 1.8;
+section{
+    background-color: white;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    padding-left: 30px; 
+    font-size: 3vw;
     font-family: 'Sriracha';
-    font-size: 2em;
-    font-weight: bold;
+    line-height: 1.8em;
     font-style: italic;
-    
 }
-#img-um >p{
-    position: absolute;
-    top: 85%;
-    transform: translate(0% -50%) ;
-    background-color: rgba(0, 0, 0, 0.247);
-    width: 375px;
-    height: 400px;
-    padding-right: 10px;
+.normal>p{
+    padding-bottom: 5vh;
 }
-#img-um{
+section.imagem{
     background-color: white;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
+}
+#img01{
     background-image: url(imagens/background001.jpg);
-    background-position: right;
+    background-position: right center;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 700px;
+    
 }
-#img-dois > p{
-    position: absolute;
-    top: 263%;
-    transform: translate(0% -50%) ;
-    background-color: rgba(0, 0, 0, 0.247);
-    width: 380px;
-    height: 420px;
-    padding-right: 20px;
-}
-#img-dois{
-    color: white;
+#img02{
     background-image: url(imagens/background002.jpg);
     background-position: right;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 700px;
+}
+
+.imagem >p{
+    display: inline-block ;
+    background-color: rgba(0, 0, 0, 0.247);
+    padding-right: 20px;
+    padding-left: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.651);
+}
+
+footer{
+    background-color: black;
 }
 footer>p{
-    background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-align: center;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
 }
