@@ -12,8 +12,10 @@
             text-align: center;
             font-size: 1.5em;
             padding: 10px;
+            background-color: rgb(194, 194, 194);
         }
         table{
+            position: relative;
             width: 500px;
             border-collapse: collapse;
         }
@@ -21,13 +23,20 @@
             border: 1px solid black;
             padding: 10px;
         }
-        thead{
+        th{
+            font-weight: bold;
+        }
+        thead, tfoot{
             background-color: grey;
             color: white;
         }
-        tfoot{
-            background-color: grey;
-            color: white;
+        thead>tr>th{
+            position: sticky;
+            top: 0;
+            background-color: grey ;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
         }
         td.num{
             text-align: right;
@@ -40,8 +49,8 @@
         <caption>População das Unidades Federativas</caption>
         <thead>
             <th></th>
-            <th>Estado</th>
-            <th style="width: 100px;">População</th>
+            <th scope="col">Estado</th>
+            <th style="width: 100px;" scope="col">População</th>
         </thead> 
         <tbody>
             <tr>
@@ -183,7 +192,7 @@
         <tfoot>
             <tr>
                 <th></th>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>
                     <strong>212 583 750</strong>
                  </td>                
